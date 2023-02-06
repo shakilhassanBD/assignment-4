@@ -42,9 +42,33 @@ function isLGSeven(parameter) {
 
     else {
         console.log(doubleOFInput);
-        
+
         return doubleOFInput;
     }
 }
 const givenValue = 15;
 const sendValue = isLGSeven(givenValue);
+
+
+// //fourth problem is given below......
+
+function findingBadData(data) {
+    const goodData = [];
+    const badData = [];
+    for (let i = 0; i < data.length; i++) {
+        const index = i;
+        const elements = data[index];
+        if (elements < 0) {
+            badData.push(elements);
+            console.log(elements, ' :Bad Data,');
+
+        }
+        else if (elements >= 0) {
+            goodData.push(elements);
+            console.log(elements, ' :Good Data');
+        }
+    }
+    return badData;
+}
+const arrayOfData = [5, 10, 15, -4, -8, -12];
+const sendData = findingBadData(arrayOfData);

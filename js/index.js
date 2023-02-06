@@ -10,7 +10,20 @@ function mindGame(positivenumber) {
     return result0;
 }
 
-const givenNumber = 50;
+const givenNumber = 33;
 const sendNumber = mindGame(givenNumber);
 
 //second problem is given below......
+
+
+function  evenOdd(evenOrOdd){
+    const result1 = evenOrOdd.length;
+    if(result1 %2 == 0){
+        console.log('even');
+    }
+    else{
+        console.log('odd');
+    }
+}
+const givenString = 'Batch-7';
+const sendString = evenOdd(givenString);

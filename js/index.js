@@ -5,12 +5,13 @@ function mindGame(positiveNumber) {
     const summation = multiplication + 10;
     const division = summation / 2;
     const result0 = division - 5;
-    console.log(result0);
+
+    // console.log(result0);
 
     return result0;
 }
 
-const givenNumber = 33;
+const givenNumber = 50;
 const sendNumber = mindGame(givenNumber);
 
 // //second problem is given below......
@@ -19,10 +20,10 @@ const sendNumber = mindGame(givenNumber);
 function evenOdd(evenOrOdd) {
     const result1 = evenOrOdd.length;
     if (result1 % 2 == 0) {
-        console.log('even');
+        // console.log('even');
     }
     else {
-        console.log('odd');
+        // console.log('odd');
     }
 }
 const givenString = 'Batch-7';
@@ -35,13 +36,13 @@ function isLGSeven(parameter) {
     let difference = parameter - 7;
     let doubleOFInput = parameter *2;
     if (difference < 7) {
-        console.log(difference);
+        // console.log(difference);
 
         return difference;
     }
 
     else {
-        console.log(doubleOFInput);
+        // console.log(doubleOFInput);
 
         return doubleOFInput;
     }
@@ -61,15 +62,15 @@ function findingBadData(data) {
         }
     }
     if (badData.length > 0) {
-        console.log(badData.length);
+        // console.log(badData.length);
+
+        return badData.length;
     }
-    else {
-        console.log(0);
-    }
-    return badData.length;
+    
+    
 }
 
-const dataList = [2, -5, -7, -13];
+const dataList = [2, 5, 7, -13];
 const result = findingBadData(dataList);
 
 
@@ -84,11 +85,15 @@ function gemsToDiamond(firstFriendGem, secondFriendGem, thirdFriendGem) {
 
     let existingDiamond = totalDiamond - 2000;
     if (totalDiamond > 1000*2) {
-        console.log(existingDiamond);
+        // console.log(existingDiamond);
+
+        return existingDiamond;
 
     }
     else{
-        console.log(totalDiamond);
+        // console.log(totalDiamond);
+        
+        return totalDiamond;
     }
 }
 const firstGem = 20;
